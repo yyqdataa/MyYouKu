@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.yyqdata.myyouku.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/fragment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_above="@+id/main_bottom_rg"/>
+
+    <RadioGroup
+        android:id="@id/main_bottom_rg"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="首页"
+            android:textColor="@color/rg_text_color"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/home_rb"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="频道"
+            android:textColor="@color/rg_text_color"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/channel_rb"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="订阅"
+            android:textColor="@color/rg_text_color"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/subscribe_rb"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="VIP会员"
+            android:textColor="@color/rg_text_color"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/vip_rb"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="我的"
+            android:textColor="@color/rg_text_color"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/user_rb"/>
+
+    </RadioGroup>
+</RelativeLayout>
